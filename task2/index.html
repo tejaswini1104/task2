@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task 2 - Intermediate HTML, CSS, JS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">MySite</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#form">Form</a></li>
+      <li><a href="#todo">To-Do</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1 id="form">Contact Form</h1>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <input type="tel" id="phone" placeholder="Your Phone Number" required pattern="[0-9]{10}" />
+      <input type="text" id="address" placeholder="Your Address" required />
+      <button type="submit">Submit</button>
+    </form>
+
+<h2 id="todo">To-Do List</h2>
+<input type="text" id="taskInput" placeholder="Add new task" />
+<button type="button" onclick="addTask()">Add Task</button>
+<div class="todo-list" id="todoList"></div>
+
+  </div>
+  <h2 id="gallery">Image Gallery</h2>
+<div class="gallery">
+  <img src="https://www.rover.com/blog/wp-content/uploads/puppy-facts-960x540.jpg" alt="Image 1" />
+  <img src="https://thumbs.dreamstime.com/b/enchanting-soft-blue-pink-rose-buds-serene-fashion-photography-aesthetic-perfect-floral-designers-artists-capture-349683428.jpg" alt="Image 2" />
+  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2h8ZW58MHx8MHx8fDA%3D" alt="Image 3" />
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJD983uNsKYCLe99xaVXEan4uqFlMFktv7uw&s" alt="Image 4" />
+  <img src="https://static.vecteezy.com/system/resources/thumbnails/042/195/222/small/ai-generated-racing-game-background-free-photo.jpg" alt="Image 5" />
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP5pFEY8wgMCz0GhQnYVVM115n53kijc96we_VUBY9kpBaRtRb_uCktxSgVS0IEIiR33U&usqp=CAU alt="Image 6" />
+</div>
+
+
+  <section class="grid-section">
+    <div class="grid-item">Feature 1</div>
+    <div class="grid-item">Feature 2</div>
+    <div class="grid-item">Feature 3</div>
+    <div class="grid-item">Feature 4</div>
+  </section>
+
+  <script src="form-validation.js"></script>
+</body>
+</html>
